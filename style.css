@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #4B0082, #8A2BE2);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+h1::before {
+  content: url('logo.png');
+  width: 40px;
+  height: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 600px;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+button {
+  background: #fff;
+  color: #4B0082;
+  font-weight: bold;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #eee;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+input, select {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+canvas {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+body.dark .card {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.1);
+}
+
+body.dark button {
+  background: #333;
+  color: #fff;
+}
+
+body.dark input,
+body.dark select {
+  background: rgba(255,255,255,0.1);
+  color: #eee;
+}
+
+.hidden {
+  display: none !important;
+}
